@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineNeds - Agenda de Filmes</title>
+    <title>CineDiscord - Automático</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="toast-container"></div>
-
     <div class="container">
         <header>
-            <h1>CineNeds</h1>
-            <p>Agenda oficial do grupo</p>
+            <h1>🎬 CineDiscord</h1>
+            <p>Os dados são puxados automaticamente via API</p>
         </header>
 
         <section class="form-container">
             <div class="input-group">
-                <input type="text" id="movieTitle" placeholder="Nome do Filme">
-                <input type="datetime-local" id="movieDate">
-                <button onclick="addMovie()" class="btn-add">Agendar Sessão</button>
+                <input type="text" id="movieTitle" placeholder="Digite o nome do filme em inglês ou português...">
+                <button onclick="addMovie()">Buscar e Adicionar</button>
             </div>
         </section>
 
-        <div id="movieList" class="grid-movies"></div>
+        <div id="movieList" class="grid-movies">
+            </div>
     </div>
 
     <script src="script.js"></script>
